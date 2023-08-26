@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  text-align: center;
+  }
+body{
+  background-color: black;
+  color: white;
+}
+span{
+  color: #a8FF35;
+}
+#heading{
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+h3{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+.quotes{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 3rem;
+}
+.quote{
+  /* margin: 5px; */
+  /* border-style: dashed; */
+  background-color: #494F55;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  
+}
+.dont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.para{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 3rem;
+}
+#outer{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  margin: 10px 0px;
+  padding: 5px 7px;
+  border-radius: 10px;
+}
+#inner{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 50px;
+  box-shadow:2px 2px 2px  #a8FF35;
+}
+.schedule{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #a8FF35;
+  gap: 20px;
+}
+.schedule h1{
+  margin: 2rem 6rem;
+}
+#book{
+  color: black;
+}
+#Discount{
+
+  color: black;
+
+}
+#sp{
+  color: black;
+  margin: 3rem;
+  
+}
+.whyus{
+  margin: 3rem;
+}
+hr{
+  color: white;
+}
+.whoarewe{
+  margin: 3rem;
+}
+.follow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #a8FF35;
+}
+.follow h1{
+  color: black;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons img{
+  height: fit-content;
+  width: fit-content;
+  
+}
+#datebutton{
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+#dateitem{
+  padding: 4rem;
+  width: 100%;
+
+}
+.card{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 3rem;
+  /* padding: 2rem ; */
+  background-color: black;
+  color: white;
+}
+.card h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bookappoin{
+  background-color: #a8FF35;
+  color: black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#Homebutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  padding: 4px 4rem;
+  background-color: black;
+  color: #a8FF35;
+  border-color:#a8FF35 ;
+}
+.appointsucess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  flex-direction: column;
+}
+.appointsucess img{
+  border-radius: 50%;
+  height: 12vh;
+  width: 25vw;
+  background-color: #a8FF35;
+}
+
+nav{
+  width: 100%;
+  /* background-color: aqua; */
+  margin: 0rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul li{
+  list-style: none;
+}
+.navbar ul{
+  display: flex;
+  /* background-color: #a8FF35; */
+
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+.line{
+  height: 5px;
+  margin: 5px;
+  border-radius:10px ;
+  width: 30px;
+  background-color: aliceblue;
+  
+}
+.hamburger{
+  display: none;
+}
+@media only screen and (max-width:750) {
+  nav{
+    background-color: green;
+  }
+}
