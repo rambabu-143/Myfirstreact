@@ -253,6 +253,15 @@ nav{
   margin: 1rem 1rem;
   color: #a8FF35;
 }
+#place {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+	-webkit-text-stroke: 1px #a8FF35;
+	-webkit-text-fill-color: black;
+}
 
 @media  screen and (max-width:750px) {
   .hamburger{
