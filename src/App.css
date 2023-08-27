@@ -94,11 +94,17 @@ h3{
   margin: 2rem 6rem;
 }
 #book{
-  color: black;
+  color: white;
+  -webkit-text-fill-color: #a8FF35;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 #Discount{
 
-  color: black;
+  color: white;
+  -webkit-text-fill-color: #a8FF35;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 
 }
 #sp{
@@ -242,6 +248,10 @@ nav{
 .social-media{
   width: calc(100% - 30px);
   object-fit: contain;
+}
+.logo{
+  margin: 1rem 1rem;
+  color: #a8FF35;
 }
 
 @media  screen and (max-width:750px) {
