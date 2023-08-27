@@ -94,11 +94,17 @@ h3{
   margin: 2rem 6rem;
 }
 #book{
-  color: black;
+  color: white;
+  -webkit-text-fill-color: #a8FF35;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 #Discount{
 
-  color: black;
+  color: white;
+  -webkit-text-fill-color: #a8FF35;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 
 }
 #sp{
@@ -243,9 +249,28 @@ nav{
   width: calc(100% - 30px);
   object-fit: contain;
 }
+.logo{
+  margin: 1rem 1rem;
+  color: #a8FF35;
+}
+#place {
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+	-webkit-text-stroke: 1px #a8FF35;
+	-webkit-text-fill-color: black;
+}
 
 @media  screen and (max-width:750px) {
-  .navbar{
-    background-color: green;
+  .hamburger{
+    display: block;
+    cursor: pointer;
+    margin: 1rem 1rem;
+
+  }
+  #items{
+    display: none;
   }
 }
