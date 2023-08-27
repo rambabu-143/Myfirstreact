@@ -9,7 +9,7 @@ const Homepage = () => {
         </h1>
       </section>
       <div id="heading2">
-        <h2>💥NOW IN HYDERABAD💥</h2>
+        <h2 id="place">💥NOW IN HYDERABAD💥</h2>
         <br />
         <h3>Revitalize Your Vehicle's Performance and Efficiency</h3>
       </div>
