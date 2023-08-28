@@ -9,11 +9,9 @@ const Homepage = () => {
         </h1>
       </section>
       <div id="heading2">
-        <h2>💥NOW IN HYDERABAD💥</h2>
-        <br />
+        <h2 id="place">💥NOW IN HYDERABAD💥</h2>
         <h3>Revitalize Your Vehicle's Performance and Efficiency</h3>
       </div>
-      <br />
       <div className="quotes">
         <p className="quote">🚀 Is Your Car's Mileage Dropping?</p>
 
@@ -23,8 +21,6 @@ const Homepage = () => {
 
         <p className="quote">🌍 Worried About Harmful Emissions?</p>
       </div>
-      <br />
-      <br />
       <div className="dont">
         <div className="para">
           <p>
@@ -57,8 +53,7 @@ const Homepage = () => {
         <p>
           Our HHO Carbon Cleaning Machine employs cutting-edge hydrogen
           technology to effectively remove carbon deposits from engines.
-          <br />
-          <br />
+        <br /><br />
           This innovative process leads to cleaner engines, improved combustion
           efficiency, and a host of benefits.
         </p>
