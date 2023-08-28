@@ -3,17 +3,20 @@ import React from "react";
 import Homepage from "./Component/Homepage";
 import Bookappointent from "./Component/Bookappointment";
 import Appointsucess from "./Component/Appointsucess";
-import Navbar from "./Component/Navbar";
+
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Homepage />
-
-      <Bookappointent />
-
-      <Appointsucess />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/book-appointment" element={<Bookappointent />} />
+          <Route path="/appointment-success" element={<Appointsucess />} />
+          <Route path="/*" element={<div>Page Not Found</div>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
