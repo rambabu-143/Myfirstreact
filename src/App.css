@@ -255,6 +255,7 @@ hr {
   position: sticky;
   top: 0;
   background-color: black;
+  z-index: 99;
 }
 
 nav {
@@ -343,6 +344,10 @@ nav {
     margin: 1rem 1rem;
 
   }
+
+  #items{
+    display: none;
+  }
   
 
   .quotes{
@@ -355,6 +360,10 @@ nav {
   }
 
   .quote{
+    width: 100%;
+  }
+
+  .card {
     width: 100%;
   }
 }
