@@ -26,7 +26,6 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
 }
 h3{
 
@@ -34,23 +33,29 @@ h3{
   justify-content: center;
   align-items: center;
   margin: 3rem;
+  text-align: center;
 }
 .quotes{
+  width: 85%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: 3rem;
 }
 .quote{
   background-color: #494F55;
   border-radius: 12px;
-  width: 100%;
+  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px 10px;
+}
+
+.quote:hover{
+  background-color: #585e63;
+  user-select: none;
 }
 
 .dont {
@@ -65,6 +70,7 @@ h3{
   justify-content: center;
   width: 100%;
   margin: 3rem;
+  text-align: center;
 }
 #outer{
   display: flex;
@@ -74,13 +80,20 @@ h3{
   margin: 10px 0px;
   padding: 5px 7px;
   border-radius: 10px;
+  transition: transform 0.5s;
 }
-#inner{
+
+#inner:hover{
   background-color: black;
+}
+
+#inner{
+  background-color: rgb(27, 27, 27);
   color: white;
   border-radius: 10px;
   padding: 5px 50px;
   box-shadow:2px 2px 2px  #a8FF35;
+  transition: 0.5s ease;
 }
 .schedule{
   display: flex;
@@ -91,7 +104,8 @@ h3{
   gap: 20px;
 }
 .schedule h1{
-  margin: 2rem 6rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 #book{
   color: white;
@@ -113,13 +127,13 @@ h3{
   
 }
 .whyus{
-  margin: 3rem;
+  margin: 3rem 0;
 }
 hr{
   color: white;
 }
 .whoarewe{
-  margin: 3rem;
+  margin: 3rem 0;
 }
 .follow{
   display: flex;
@@ -153,10 +167,13 @@ hr{
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  margin: 3rem;
+  margin: 3rem 0;
   /* padding: 2rem ; */
   background-color: black;
   color: white;
+
+  width: 50%;
+  margin: 0 auto;
 }
 
 .card > input {
@@ -190,7 +207,7 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 3rem 0;
   flex-direction: column;
 }
 .appointsucess img{
@@ -200,10 +217,15 @@ hr{
   background-color: #a8FF35;
 }
 
+.navbar{
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+
 nav{
   width: 100%;
   /* background-color: aqua; */
-  margin: 0rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,13 +241,34 @@ nav{
 .navbar ul li a {
   text-decoration: none;
   color: white;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 2rem;
+  width: fit-content;
+  font-size: 1.05rem;
 }
+
+.navbar ul li{
+  position: relative;
+}
+
+.navbar ul li::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #a8FF35;
+  left: 0;
+  bottom: -10px;
+  transition:0.3s ease;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
 .line{
-  height: 5px;
-  margin: 5px;
-  border-radius:10px ;
+  height: 3px;
+  margin: 5.5px 0;
+  border-radius:10px;
   width: 30px;
   background-color: aliceblue;
   
@@ -250,7 +293,7 @@ nav{
   object-fit: contain;
 }
 .logo{
-  margin: 1rem 1rem;
+  margin: 1rem 0;
   color: #a8FF35;
 }
 #place {
@@ -263,7 +306,12 @@ nav{
 	-webkit-text-fill-color: black;
 }
 
-@media  screen and (max-width:750px) {
+.section__container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media  screen and (max-width:770px) {
   .hamburger{
     display: block;
     cursor: pointer;
@@ -272,5 +320,29 @@ nav{
   }
   #items{
     display: none;
+  }
+
+  .quotes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .quote{
+    width: 100%;
+  }
+}
+
+
+@media  screen and (max-width:1277px) {
+  .quotes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 }

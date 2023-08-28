@@ -1,20 +1,26 @@
-import React from 'react'
+import React from "react";
 
 const Appointsucess = () => {
   return (
-    <div className='appointsucess'>
+    <div className="appointsucess section__container">
       <img src="./icons/tick.png" alt="" />
       <br />
       <br />
-      <p><span>Your Appointment has been scheduled </span></p>
+      <p>
+        <span style={{ textAlign: "center" }}>
+          Your Appointment has been scheduled{" "}
+        </span>
+      </p>
       <br />
       <br />
-      <p>You will recieve a text message regarding your appointment</p>
+      <p style={{ textAlign: "center" }}>
+        You will recieve a text message regarding your appointment
+      </p>
       <br />
       <br />
-      <button id='Homebutton'>Home</button>
+      <button id="Homebutton">Home</button>
     </div>
-  )
-}
+  );
+};
 
-export default Appointsucess
+export default Appointsucess;
