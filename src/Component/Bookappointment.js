@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "../Component/Navbar";
+import Dates from "./Dates";
+
 
 const Bookappointment = () => {
   return (
@@ -20,35 +22,9 @@ const Bookappointment = () => {
           </label>
           <input type="text" name="email" placeholder="example@gmail.com" />
           <br />
-          <label htmlFor="dropdown">Date</label>
-          <div className="dropdown">
-            <button
-              id="datebutton"
-              className="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Please Select
-            </button>
-            <ul id="dateitem" className="dropdown-menu">
-              <li>
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </li>
-            </ul>
-          </div>
+          <label  htmlFor="dropdown">Date</label>
+          <Dates id="Dates"/>
+          
           <br />
           <label htmlFor="dropdown">Time</label>
           <div className="dropdown">

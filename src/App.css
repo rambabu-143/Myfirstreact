@@ -31,8 +31,8 @@ span {
   justify-content: center;
   align-items: center;
   color: black;
-	-webkit-text-stroke: 1px #a8FF35;
-	-webkit-text-fill-color: black;
+  -webkit-text-stroke: 1px #a8FF35;
+  -webkit-text-fill-color: black;
 }
 
 h3 {
@@ -44,7 +44,8 @@ h3 {
   margin: 3rem;
   text-align: center;
 }
-.quotes{
+
+.quotes {
   width: 85%;
   margin: 0 auto;
   display: flex;
@@ -63,7 +64,7 @@ h3 {
   padding: 10px 10px;
 }
 
-.quote:hover{
+.quote:hover {
   background-color: #585e63;
   user-select: none;
 }
@@ -95,17 +96,17 @@ h3 {
   transition: transform 0.5s;
 }
 
-#inner:hover{
+#inner:hover {
   background-color: black;
 }
 
-#inner{
+#inner {
   background-color: rgb(27, 27, 27);
   color: white;
   border-radius: 10px;
   padding: 5px 50px;
   box-shadow: 2px 2px 2px #a8FF35;
-  box-shadow:2px 2px 2px  #a8FF35;
+  box-shadow: 2px 2px 2px #a8FF35;
   transition: 0.5s ease;
 }
 
@@ -118,7 +119,7 @@ h3 {
   gap: 20px;
 }
 
-.schedule h1{
+.schedule h1 {
   margin: 2rem 0;
   text-align: center;
 }
@@ -128,7 +129,8 @@ h3 {
   -webkit-text-fill-color: #a8FF35;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  -webkit-text-fill-color: #a8FF35; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: #a8FF35;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
@@ -137,7 +139,8 @@ h3 {
 
   /* color: black; */
   color: white;
-  -webkit-text-fill-color: #a8FF35; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: #a8FF35;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: #a8FF35;
@@ -151,14 +154,16 @@ h3 {
   margin: 3rem;
 
 }
-.whyus{
+
+.whyus {
   margin: 3rem 0;
 }
 
 hr {
   color: white;
 }
-.whoarewe{
+
+.whoarewe {
   margin: 3rem 0;
 }
 
@@ -251,7 +256,7 @@ hr {
   background-color: #a8FF35;
 }
 
-.navbar{
+.navbar {
   position: sticky;
   top: 0;
   background-color: black;
@@ -284,11 +289,11 @@ nav {
   font-size: 1.05rem;
 }
 
-.navbar ul li{
+.navbar ul li {
   position: relative;
 }
 
-.navbar ul li::after{
+.navbar ul li::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -296,17 +301,17 @@ nav {
   background-color: #a8FF35;
   left: 0;
   bottom: -10px;
-  transition:0.3s ease;
+  transition: 0.3s ease;
 }
 
-.navbar ul li:hover::after{
+.navbar ul li:hover::after {
   width: 100%;
 }
 
-.line{
+.line {
   height: 3px;
   margin: 5.5px 0;
-  border-radius:10px;
+  border-radius: 10px;
   width: 30px;
   background-color: aliceblue;
 
@@ -331,26 +336,48 @@ nav {
   width: calc(100% - 30px);
   object-fit: contain;
 }
-.logo{
+
+.logo {
   margin: 1rem 1rem;
   color: #a8FF35;
 }
 
- 
+.hambody {
+  display: none;
+}
+.hambody ul{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
 @media screen and (max-width:850px) {
-  .hamburger{
+  .hamburger {
     display: block;
     cursor: pointer;
     margin: 1rem 1rem;
 
   }
 
-  #items{
+  .hambody {
+    padding: 0.5rem;
+    background-color: black;
+    width: 100%;
+    /* border: 1px solid #a8FF35; */
+    border-radius: 12px;
+    box-shadow: 0px 2px 2px #a8FF35;
+  }
+
+  #items {
     display: none;
   }
-  
 
-  .quotes{
+
+  .quotes {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -359,7 +386,7 @@ nav {
     gap: 10px;
   }
 
-  .quote{
+  .quote {
     width: 100%;
   }
 
@@ -367,14 +394,19 @@ nav {
     width: 100%;
   }
 }
-.section__container{
+
+.section__container {
   width: 85%;
   margin: 0 auto;
 }
+#Dates{
+  background-color: green;
+  width: 100%;
+}
 
 
-@media  screen and (max-width:1277px) {
-  .quotes{
+@media screen and (max-width:1277px) {
+  .quotes {
     width: 100%;
     display: flex;
     align-items: center;
