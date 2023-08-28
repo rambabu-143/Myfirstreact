@@ -5,7 +5,6 @@ import Navbar from "../Component/Navbar";
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
       <div className="section__container">
         <section id="heading">
           <h1>

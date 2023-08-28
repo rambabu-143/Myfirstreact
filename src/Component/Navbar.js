@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import $ from 'jquery';
+import $ from "jquery";
 
 const navbar = () => {
   const fun = () => {
     $(".hambody").slideToggle();
-
-  }
+  };
   return (
     <div className="navbar">
       <nav className="section__container">
-        <div className="logo">
+        <Link to={"/"} className="logo">
           <h2>AKASH TRADERS</h2>
-        </div>
+        </Link>
         <div className="hamburger" onClick={fun}>
           <div className="line"></div>
           <div className="line"></div>
@@ -32,18 +31,17 @@ const navbar = () => {
       </nav>
       <div className="hambody">
         <ul>
-          <li>
+          <li onClick={fun}>
             <Link to={"/"}>Home</Link>
           </li>
-          <li>
+          <li onClick={fun}>
             <Link to={"/about"}>About</Link>
           </li>
-          <li>
+          <li onClick={fun}>
             <Link to={"/services"}>Services</Link>
           </li>
         </ul>
       </div>
-
     </div>
   );
 };

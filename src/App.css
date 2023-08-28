@@ -205,7 +205,7 @@ hr {
   margin: 3rem 0;
   /* padding: 2rem ; */
   background-color: black;
-  color: white;
+  color: rgb(230, 229, 229);
 
   width: 50%;
   margin: 0 auto;
@@ -228,7 +228,17 @@ hr {
   color: black;
   border-radius: 10px;
   padding: 0.5rem;
+  outline: none;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
+
+#bookappoin:hover{
+  opacity: 1;
+}
+
+
 
 #Homebutton {
   display: flex;
@@ -284,28 +294,33 @@ nav {
 .navbar ul li a {
   text-decoration: none;
   color: white;
-  margin: 2rem;
   width: fit-content;
   font-size: 1.05rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
 }
 
-.navbar ul li {
+.navbar ul li a{
   position: relative;
 }
 
-.navbar ul li::after {
+.navbar ul li a::after {
   content: '';
   position: absolute;
   height: 2px;
   width: 0%;
   background-color: #a8FF35;
   left: 0;
-  bottom: -10px;
+  bottom: -5px;
   transition: 0.3s ease;
 }
 
-.navbar ul li:hover::after {
+.navbar ul li a:hover::after {
   width: 100%;
+}
+
+.navbar ul li a:hover{
+  color: #a8FF35;
 }
 
 .line {
@@ -315,6 +330,11 @@ nav {
   width: 30px;
   background-color: aliceblue;
 
+  
+}
+
+.hamburger:hover .line{
+  background-color: #a8FF35;
 }
 
 .hamburger {
@@ -345,12 +365,21 @@ nav {
 .hambody {
   display: none;
 }
+
 .hambody ul{
-  padding: 1rem;
+  padding: 1rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
+}
+
+#date-picker{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
 }
 
 
@@ -361,6 +390,10 @@ nav {
     cursor: pointer;
     margin: 1rem 1rem;
 
+  }
+
+  .navbar ul li a::after{
+    display: none;
   }
 
   .hambody {

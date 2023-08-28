@@ -1,32 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Component/Navbar";
 import Dates from "./Dates";
 
-
 const Bookappointment = () => {
+  const [appointmentData, setAppointmentData] = useState({
+    name: "",
+    email: "",
+    date: "",
+    time: "",
+  });
+
   return (
     <>
-      <Navbar />
-
       <div className="section__container">
-        <div className="card">
+        <form className="card">
           <h1>Book Appointment</h1>
           <br />
-          <label htmlFor="Name" required>
-            Name *
-          </label>
-          <input type="text" name="Name" placeholder="Full Name *" />
+          <TextInputForm
+            label={"Name *"}
+            placeholder={"Enter full name"}
+            value={appointmentData.name}
+            onChange={(e) =>
+              setAppointmentData({ ...appointmentData, name: e.target.value })
+            }
+          />
           <br />
-          <label htmlFor="email" required>
-            Email Address *
-          </label>
-          <input type="text" name="email" placeholder="example@gmail.com" />
+          <TextInputForm
+            label={"Email Address *"}
+            placeholder={"example@gmail.com"}
+            value={appointmentData.email}
+            onChange={(e) =>
+              setAppointmentData({ ...appointmentData, email: e.target.value })
+            }
+          />
           <br />
-          <label  htmlFor="dropdown">Date</label>
-          <Dates id="Dates"/>
-          
+
+          <label htmlFor="dropdown">Date *</label>
+          <Dates id="Dates" />
+
           <br />
-          <label htmlFor="dropdown">Time</label>
+          <label htmlFor="dropdown">Time *</label>
           <div className="dropdown">
             <button
               id="datebutton"
@@ -58,10 +71,28 @@ const Bookappointment = () => {
           <br />
           <br />
           <button id="bookappoin">Book Appointment</button>
-        </div>
+        </form>
       </div>
     </>
   );
 };
 
 export default Bookappointment;
+
+const TextInputForm = ({ onChange, value, label, placeholder, type }) => {
+  return (
+    <>
+      <label htmlFor={label} required>
+        {label}
+      </label>
+      <input
+        type={type || "text"}
+        name={label}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        required
+      />
+    </>
+  );
+};

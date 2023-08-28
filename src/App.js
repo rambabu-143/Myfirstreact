@@ -3,13 +3,14 @@ import React from "react";
 import Homepage from "./Component/Homepage";
 import Bookappointent from "./Component/Bookappointment";
 import Appointsucess from "./Component/Appointsucess";
-
+import Navbar from "./Component/Navbar";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/book-appointment" element={<Bookappointent />} />
