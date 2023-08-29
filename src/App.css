@@ -381,7 +381,98 @@ nav {
   border-radius: 10px;
   outline: none;
 }
+.bike{
+  margin: 2rem 0rem;
+  background-image:url("./images/bike.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.bike h4{
+  font-size: xx-large;
+  margin:1rem  0rem;
+  color: #a8FF35;
+}
+.bike h2{
+  margin: 3rem 0rem;
+  color: #a8FF35;
 
+}
+.car1{
+  margin: 2rem 0rem;
+  background-image:url("./images/car1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.car1 h4{
+  font-size: xx-large;
+  margin:1rem  0rem;
+  color:#a8FF35;
+}
+.car1 h2{
+  margin: 3rem 0rem;
+  color: #a8FF35;
+
+}
+.car2{
+  margin: 2rem 0rem;
+  background-image:url("./images/car2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.car2 h4{
+  font-size: xx-large;
+  margin:1rem  0rem;
+  color: #a8FF35;
+}
+.car2 h2{
+  color: #a8FF35;
+  margin: 3rem 0rem;
+
+}
+#Booknow{
+  margin:3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #a8FF35;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
+#selectvehicle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.allvehicles{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 
 @media screen and (max-width:850px) {

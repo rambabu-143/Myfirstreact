@@ -5,6 +5,7 @@ import Bookappointent from "./Component/Bookappointment";
 import Appointsucess from "./Component/Appointsucess";
 import Navbar from "./Component/Navbar";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Vehicle from "./Component/Vehicle";
 
 function App() {
   return (
