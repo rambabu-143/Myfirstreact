@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Component/Navbar";
+import Vehicle from "./Vehicle";
 
 const Homepage = () => {
   return (
@@ -126,6 +127,8 @@ const Homepage = () => {
       <div className="footer">
         <h6>ALL RIGHTS RESERVED &copy; NEXUSIO</h6>
       </div>
+
+      <Vehicle />
     </div>
   );
 };

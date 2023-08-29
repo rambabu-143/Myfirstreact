@@ -8,15 +8,11 @@ const navbar = () => {
   };
   return (
     <div className="navbar">
-      <nav className="section__container">
+      <nav className="section__container align_nav">
         <Link to={"/"} className="logo">
           <h2>AKASH TRADERS</h2>
         </Link>
-        <div className="hamburger" onClick={fun}>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
+
         <ul id="items">
           <li>
             <Link to={"/"}>Home</Link>
@@ -28,6 +24,12 @@ const navbar = () => {
             <Link to={"/services"}>Services</Link>
           </li>
         </ul>
+
+        <div className="hamburger" onClick={fun}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
       </nav>
       <div className="hambody">
         <ul>
